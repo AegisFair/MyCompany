@@ -156,6 +156,26 @@ main .main__about{
 .about__position{
 	font-size: 14px;
 }
+/*.main__services{
+	text-align: center;
+}*/
+.main__services h1{
+	color: #222222;
+	font-weight: 600;
+	font-size: 44px;
+}
+.main__services p{
+	font-style: italic;
+	font-size: 16px;
+	color: #6c6c6c;
+}
+ .services__cards{
+ 	text-align: center;
+ 	display: grid;
+ 	grid-template-columns: auto auto auto auto;
+ 	grid-column-gap: 50px;
+ }
+
 
 
 
