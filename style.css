@@ -76,10 +76,9 @@ main .main__about{
 	padding: 100px 0;
 }
 .about__right{
-	margin-left: 175px;/*Подумаю о процентах, 11%*/
-	/*margin-left: 11%;*/
+	/*margin-left: 175px;/*Подумаю о процентах, 11%*/
+	margin-left: 11%;
 }
-
 
 .about__right h1{
 	display: inline-block;
@@ -98,8 +97,11 @@ main .main__about{
 	background-repeat: no-repeat;
 	padding-left: 25px;
 	margin-top: 10px;
+	color: #5a5a5a;
 }
-
+.main__welcome .emphasis_bold{
+	font-weight: bold;
+}
 .about__right .emphasis_bold{
 	font-weight: bold;
 }
@@ -112,10 +114,48 @@ main .main__about{
 .mw-100{
 	min-width: 100%;
 }
-
-
-
-
+.main__team{
+	background: #000;
+	text-align: center;
+	padding: 100px 0 165px 0;
+	color: #fff;
+}
+.main__team h1{
+	font-size: 44px;
+	padding-bottom: 30px;
+}
+.line{
+	width: 100px;
+	height: 3px;
+	background:#fcac45;
+	position: relative;
+	left: 46.6%;
+	margin-bottom: 85px;/*105px Слишком большой отступ*/
+}
+.photo{
+	background: #d7d7d7;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	margin: 20px auto;
+}
+.team__cards{
+	display: flex;
+}
+.card{
+	margin: 0 40px;
+}
+.name{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.position{
+	font-size: 16px;
+	margin-bottom: 35px;
+}
+.about__position{
+	font-size: 14px;
+}
 
 
 
@@ -174,9 +214,26 @@ main .main__about{
 	main .main__welcome h1{
 		font-size: 25px;
 	}
-	mw-100{
+	.mw-100{
 		max-width: 100%;
 	}
+	.main__about{
+		flex-direction: column;
+	}
+	.about__right{
+		margin-left: 0;
+		text-align: center;
+	}
+	.about__right li{
+		text-align: left;
+	}
+	.about__right h1{
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	.team__cards{
+	flex-direction: column;
+}
 }
 /* welcome еще более менее читаема
 @media screen and (max-width: 800px) {
