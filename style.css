@@ -163,20 +163,61 @@ main .main__about{
 	color: #222222;
 	font-weight: 600;
 	font-size: 44px;
+	text-align: center;
+	padding: 100px 0 30px 0;
 }
 .main__services p{
 	font-style: italic;
 	font-size: 16px;
 	color: #6c6c6c;
+	margin-bottom: 100px;
 }
- .services__cards{
+.services__cards{
  	text-align: center;
  	display: grid;
  	grid-template-columns: auto auto auto auto;
  	grid-column-gap: 50px;
  }
+.services__card h4{
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.main__clients{
+	background: #0b0b0b;
+	padding: 100px 0 205px 0;
+	color: #fff;
+	text-align: center;
+}
+.main__clients h1{
+	margin-bottom: 30px;
+}
+.main__clients img{
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.main__testimonials{
+	background: #0b0b0b;
+	text-align: center;
+	padding: 100px 0 170px 0; 
 
-
+}
+.main__testimonials h1{
+	color: #fff;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.main__testimonials .testimonials {
+	text-transform: uppercase;
+	color: #e7e7e7;
+	margin-bottom: 50px;
+}
+.main__testimonials p{
+	color: #b2b2b2;
+	font-weight: 600;
+}
+.main__testimonials .fw-light{
+	font-weight: 100;
+}
 
 
 
@@ -253,7 +294,10 @@ main .main__about{
 	}
 	.team__cards{
 	flex-direction: column;
-}
+	}
+	.services__cards{
+		grid-template-columns: auto;
+	}
 }
 /* welcome еще более менее читаема
 @media screen and (max-width: 800px) {
