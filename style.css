@@ -272,6 +272,7 @@ main .main__about{
 .red{
 	color: red;
 }
+
 form p{
 	text-align: left;
 }
@@ -280,12 +281,13 @@ form p{
 	margin-top: 100px;
 }
 input{
+
 	width: 360px;
 	height: 40px;
 	font-size: 20px;
 	margin-bottom: 30px;
 }
-input:first-of-type{
+.form__inputs p:first-of-type input{
 	margin-right: 23px;
 }
 textarea{
@@ -338,7 +340,16 @@ footer{
 
 
 
-
+@media screen and (max-width: 1575px){
+	.smallgallery img:last-of-type{
+		display: none;
+	}
+}
+@media screen and (max-width: 1167px){
+	.smallgallery img:last-of-type{
+		display: inline;
+	}
+}
 @media screen and (max-width: 1269px){
 	nav {
 		margin-left: 20%;
@@ -428,6 +439,10 @@ footer{
 	.main__work p{
 	margin-bottom: 100px;
 }
+	/*.form__inputs{
+		display: block;
+		text-align:right;
+	}*/
 }
 /* welcome еще более менее читаема
 @media screen and (max-width: 800px) {
@@ -435,3 +450,19 @@ footer{
 		padding: 50px 0 50px 0;
 	}
 }*/
+@media screen and (max-width: 751px){
+	.contact__wrapper{
+		width: 362px;
+	}
+	.form__inputs{
+		flex-direction: column;
+	}
+	.form__inputs p:first-of-type input{
+	margin-right: 0px;
+	}
+	.button__block{
+		flex-direction: column;	
+	}
+	input[type=submit]{
+	width: auto;	
+}
