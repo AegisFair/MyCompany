@@ -391,6 +391,7 @@ footer{
 		float: none;
 		display: block;
 		text-align: left;
+		font-size: 25px;
 	}
 	main .main__welcome{
 		padding: 50px 0 50px 0;
