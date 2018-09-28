@@ -345,7 +345,7 @@ footer{
 		display: none;
 	}
 }
-@media screen and (max-width: 1167px){
+@media screen and (max-width: 1184px){
 	.smallgallery img:last-of-type{
 		display: inline;
 	}
