@@ -251,7 +251,7 @@ main .main__about{
 	opacity: 0.9;
 }
 .contact__form{
-	padding: 100px 0 102px 0;
+	padding: 50px 15px
 }
 .contact__form h1,p{
 	text-align: center;
@@ -466,12 +466,15 @@ footer{
 }*/
 @media screen and (max-width: 751px){
 	.contact__wrapper{
-		width: 362px;
+		width: 100%;
 	}
 	.form__inputs{
 		flex-direction: column;
 	}
-	.form__inputs p:first-of-type input{
+	form p {
+		width: 100%
+	}
+	.form__inputs p:first-of-type{
 	margin-right: 0px;
 	}
 	.button__block{
